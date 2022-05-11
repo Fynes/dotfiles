@@ -1,6 +1,6 @@
 # my-kitty-config
 
-## usage
+## Usage
 
 ```shell
 # backup your config first
