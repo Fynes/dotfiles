@@ -1,3 +1,10 @@
+
+require('orgmode').setup_ts_grammar()
+require('orgmode').setup({
+  org_agenda_files = {'~/.config/org/**/*'},
+  org_default_notes_file = '~/.config/org/refile.org',
+})
+
 -- git sign
 require('gitsigns').setup({
   signs = {
@@ -141,8 +148,8 @@ require('nvim-treesitter.configs').setup({
   },
   highlight = {
     enable = true, -- false will disable the whole extension
-    disable = { "" }, -- list of language that will be disabled
-    additional_vim_regex_highlighting = true,
+    disable = { "org" }, -- list of language that will be disabled
+    additional_vim_regex_highlighting = {'org'},
   },
   indent = { enable = true, disable = { "yaml" } },
   context_commentstring = {

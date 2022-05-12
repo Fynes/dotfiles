@@ -3,9 +3,9 @@
 # https://sw.kovidgoyal.net/kitty/conf/
 
 # To get a full list of supported fonts use the `kitty +list-fonts` command.
-font_family     Iosevka Term
+font_family  Monaco Nerd Font Mono
 #font_family      JetBrainsMono Nerd Font
-font_size 12.0
+font_size 11.0
 
 scrollback_lines 8000
 
@@ -82,9 +82,10 @@ visual_window_select_characters 1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ
 confirm_os_window_close -1
 
 
-tab_bar_style powerline
-
-
+tab_bar_style                   powerline
+tab_bar_edge                    bottom
+tab_bar_align                   center
+tab_powerline_style             round
 
 # emoji from https://emojipedia.org/regional-indicator-symbol-letter-z/
 # title parse see https://github.com/kovidgoyal/kitty/blob/587f44ad4eb7fe545b0e580168cf0c32117b87c7/kitty/tab_bar.py#L175
@@ -257,7 +258,7 @@ map ctrl+a>d     debug_config
 
 
 # BEGIN_KITTY_THEME
-# Atom
+# One Dark
 include current-theme.conf
 # END_KITTY_THEME
 

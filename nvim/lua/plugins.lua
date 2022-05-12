@@ -57,6 +57,8 @@ return packer.startup(function(use)
     run = ':TSUpdate',
   }
 
+  -- orgmode
+  use 'nvim-orgmode/orgmode' -- orgmode lua
   -- Search
   use "kdheepak/lazygit.nvim"
   use "nvim-telescope/telescope.nvim"
